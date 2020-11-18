@@ -14,13 +14,11 @@
 header{
   display: flex;
   justify-content: center;
-  margin: 5vh auto;
   font-size: 30px;
+  padding: 8vh;
 }
 
 h1{
-  height: 35vh;
-  width: 70vw;
   text-align: center;
   color: #fcedd8;
 	font-family: 'Niconne', cursive;
