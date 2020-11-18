@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <title>Esercizio to do list</title>
+  </head>
+  <body>
+
+    <div id="app">
+
+      <header>
+
+      </header>
+
+      <main>
+        <!-- creo input dove inserire ogni volta nuovo elemento da assegnare ad addElement -->
+        <input type="text" name="" value="" placeholder="Cosa vuoi aggiungere alla tua lista?" v-model = "addElement">
+        <!-- bottono submit con funzione click per add item alla lista  -->
+        <button type="submit" name="button" @click="addItem">Aggiungi</button>
+        <ol>
+          <!-- creo primo elemento lista a cui daro v-for per ricreare tanti elementi quanti saranno in lista dopodiche inserisco {{items}} per dare ad ogni li un singolo item di lista(se aggingevo {{lista}} continuava ogni volta ad aggiornare e dare tutti elementi array) -->
+          <li v-for = "(items,i) in lista">{{items}}</li>
+        </ol>
+      </main>
+
+    </div>
+
+<script type="text/javascript" src="js/script.js">
+
+</script>
+
+  </body>
+</html>
