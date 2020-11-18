@@ -1,0 +1,71 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#app{
+  width: 70vw;
+  height: 100vh;
+  background: #d52e3f;
+  margin-left: 15vw;
+}
+
+header{
+  display: flex;
+  justify-content: center;
+  margin: 5vh auto;
+  font-size: 30px;
+}
+
+h1{
+  height: 35vh;
+  width: 70vw;
+  text-align: center;
+  color: #fcedd8;
+	font-family: 'Niconne', cursive;
+	font-weight: 700;
+  text-shadow: 5px 5px 0px #eb452b,
+              10px 10px 0px #efa032,
+              15px 15px 0px #46b59b,
+              20px 20px 0px #017e7f,
+              25px 25px 0px #052939,
+              30px 30px 0px #c11a2b,
+              35px 35px 0px #c11a2b,
+              40px 40px 0px #c11a2b,
+              45px 45px 0px #c11a2b;
+}
+
+#inserisci{
+  display: flex;
+  justify-content: center;
+}
+
+#inserisci input{
+  margin-right: 20px;
+  padding: 8px 25px;
+  border-radius: 10px;
+}
+
+#inserisci button{
+  padding: 8px;
+  border-radius: 10px;
+}
+
+ol{
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+li{
+  background-color: antiquewhite;
+  border-bottom: 1px solid grey;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 50px;
+  color: tomato;
+  border-radius: 15px;
+  font-size: 20px;
+}
