@@ -18,6 +18,10 @@ var app = new Vue ({
       this.lista.push(this.addElement);
       // aggingo funz che quando si pusha poi addElement torna vuoto e ricompilabile
       this.addElement = '';
+    },
+    // aggiungo funzione per rimuovere elemento se clicco su X
+    removeElement: function (index) {
+      this.lista.splice(index, 1);
     }
   }
 })

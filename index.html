@@ -21,7 +21,8 @@
         <button type="submit" name="button" @click="addItem">Aggiungi</button>
         <ol>
           <!-- creo primo elemento lista a cui daro v-for per ricreare tanti elementi quanti saranno in lista dopodiche inserisco {{items}} per dare ad ogni li un singolo item di lista(se aggingevo {{lista}} continuava ogni volta ad aggiornare e dare tutti elementi array) -->
-          <li v-for = "(items,i) in lista">{{items}}</li>
+          <!-- aggiunto span X; con click sopra rimuovi i selezioneato(senza (i) avrebbe rimosso sempre il primo elemento della lista)  -->
+          <li v-for = "(items,i) in lista">{{items}} <span @click="removeElement(i)" >&#10006;</span> </li>
         </ol>
       </main>
 
