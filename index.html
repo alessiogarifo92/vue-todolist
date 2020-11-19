@@ -29,6 +29,8 @@
           <!-- aggiunto span X; con click sopra rimuovi i selezioneato(senza (i) avrebbe rimosso sempre il primo elemento della lista)  -->
           <li v-for = "(items,i) in lista">{{items}} <i class="fas fa-times-circle" @click="removeElement(i)"></i></li>
         </ol>
+        <!-- aggiungo classe active se lista vuota -->
+        <h2 :class="{'active': lista == ''}">Non hai niente da fare per oggi!</h2>
       </main>
 
     </div>
