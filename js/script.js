@@ -17,9 +17,11 @@ var app = new Vue ({
     // creo funzione per pushare in lista elemento scritto in addElement
     addItem(){
       if(this.lista.includes(this.addElement)){
-       alert('Già presente nella lista')
-      }else{
-       this.lista.push(this.addElement)
+       alert('Già presente nella lista');
+     } else if (this.addElement === '') {
+       alert('Inserire qualcosa da aggiungere alla lista');
+     }else{
+       this.lista.push(this.addElement);
       }
      // aggingo funz che quando si pusha poi addElement torna vuoto e ricompilabile
      this.addElement = ''
