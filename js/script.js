@@ -12,12 +12,17 @@ var app = new Vue ({
     lista : [],
     addElement : ''
   },
-// creo funzione per pushare in lista elemento scritto in addElement
+
   methods:{
+    // creo funzione per pushare in lista elemento scritto in addElement
     addItem(){
-      this.lista.push(this.addElement);
-      // aggingo funz che quando si pusha poi addElement torna vuoto e ricompilabile
-      this.addElement = '';
+      if(this.lista.includes(this.addElement)){
+       alert('Già presente nella lista')
+      }else{
+       this.lista.push(this.addElement)
+      }
+     // aggingo funz che quando si pusha poi addElement torna vuoto e ricompilabile
+     this.addElement = ''
     },
     // aggiungo funzione per rimuovere elemento se clicco su X
     removeElement: function (index) {
