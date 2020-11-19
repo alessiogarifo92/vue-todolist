@@ -18,7 +18,8 @@
       <main>
         <div id="inserisci">
           <!-- creo input dove inserire ogni volta nuovo elemento da assegnare ad addElement -->
-          <input type="text" name="" value="" placeholder="Aggiungi alla tua lista" v-model = "addElement">
+          <!-- inserito keyup.enter per inserire elemento direttamente con invio -->
+          <input type="text" name="" value="" placeholder="Aggiungi alla tua lista" v-model = "addElement" @keyup.enter="addItem">
           <!-- bottono submit con funzione click per add item alla lista  -->
           <button type="submit" name="button" @click="addItem">Aggiungi</button>
         </div>
